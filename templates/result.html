@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌾 Prediction Result</h1>
+
+    <div class="result-card">
+
+        <h2>Recommended Crop</h2>
+
+        <h1 class="crop-name">
+            {{ prediction }}
+        </h1>
+
+        <h3 class="confidence">
+            Prediction Confidence
+        </h3>
+
+        <h2 class="confidence-value">
+            {{ confidence }}%
+        </h2>
+
+        <p class="success">
+            ✅ Based on the soil and environmental parameters you entered,
+            <strong>{{ prediction }}</strong> is the most suitable crop.
+        </p>
+
+        <!-- Crop Information -->
+        <div class="crop-info">
+
+            <h2>🌱 Crop Information</h2>
+
+            <p><strong>Growing Season:</strong> {{ info.season }}</p>
+
+            <p><strong>Ideal Temperature:</strong> {{ info.temperature }}</p>
+
+            <p><strong>Ideal Soil pH:</strong> {{ info.ph }}</p>
+
+            <p><strong>Water Requirement:</strong> {{ info.water }}</p>
+
+            <p><strong>Description:</strong> {{ info.description }}</p>
+
+        </div>
+
+        <br>
+
+        <a href="/" class="btn">
+            🔄 Predict Again
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

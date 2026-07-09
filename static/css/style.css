@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#e8f5e9;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+}
+
+.container{
+
+    width:850px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+h1{
+
+    color:#2e7d32;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+    font-size:42px;
+}
+
+.subtitle{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    color:#666;
+
+    font-size:18px;
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+}
+
+.input-box{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+label{
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+    color:#2e7d32;
+}
+
+input{
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #bbb;
+
+    font-size:16px;
+}
+
+input:focus{
+
+    outline:none;
+
+    border:2px solid #43a047;
+}
+
+button{
+
+    width:100%;
+
+    margin-top:35px;
+
+    padding:15px;
+
+    background:#2e7d32;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#1b5e20;
+}
+.result-card{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    background:#f8fff8;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:2px solid #c8e6c9;
+}
+
+.crop-name{
+
+    color:#2e7d32;
+
+    margin:25px 0;
+
+    font-size:48px;
+}
+
+.success{
+
+    color:#444;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+    line-height:1.8;
+}
+
+.btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#2e7d32;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+
+    background:#1b5e20;
+}
+.confidence{
+
+    margin-top:15px;
+
+    color:#555;
+
+    font-size:22px;
+}
+
+.confidence-value{
+
+    color:#1b5e20;
+
+    font-size:34px;
+
+    margin:10px 0 30px 0;
+}
+.crop-info{
+
+    margin-top:35px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border-left:6px solid #2e7d32;
+
+    text-align:left;
+}
+
+.crop-info h2{
+
+    color:#2e7d32;
+
+    margin-bottom:20px;
+}
+
+.crop-info p{
+
+    margin:12px 0;
+
+    font-size:17px;
+
+    color:#444;
+
+    line-height:1.6;
+}
